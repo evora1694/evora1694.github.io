@@ -20,81 +20,77 @@
 </head>
 
 <body>
-
     <div class="custom-shape-divider-top-1699375549">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
     </div>
 
-    <div class="principal">
-
-        <header class="header" >
-            <div class="logo" >
-                <a href="index.html"><img class="img" src="logo.png" alt="logo"></a>
-            </div>
-        </header>
-
-        <div class="nav-bg">
-
-            <nav class="navegacion-principal">
-                <a href="index.html">Inicio</a>
-                <a href="pastores.html">Pastores</a>
-                <a href="ministerios.html">Ministerios</a>
-                <a href="donaciones.html">Donaciones</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img class="img" src="logo.png" alt="logo"></a>
         </div>
+    </header>
 
-        <main class="contenedor1 sombra1">
-            <!--action="./recibeFormulario.php"-->
-            <form method="post" class="form">
-
-                <label form="codigo" class="lbl_titulo">Informacion Requerida</label>
-                <br>
-
-                <div class="inputbox">
-                    <input type="text" id="nombre" name="nombre" class="nombre" required="required">
-                    <span>Nombre</span>
-                    <i></i>
-                </div>
-    
-                <div class="inputbox">
-                    <input type="email" id="email" name="email" class="email" required="required">
-                    <span>Correo</span>
-                    <i></i>
-                </div>
-
-                <label for="telefono" label="lbl_inputs">Contacto</label>
-                <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Telefono de contacto">
-                <br>
-
-                <label for="mensaje" label="lbl_inputs">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10"
-                    placeholder="Escribe tu mensaje"></textarea>
-                <br>
-                <br>
-
-                <label for="eresHijo">Eres Hijo de Iglesia Nueva Vida?</label>
-                <select name="opciones" id="opciones" title="opciones" required>
-                    <option value="0">---selecciona una opcion---</option>
-                    <option value="Si">SI</option>
-                    <option value="No">NO</option>
-                    <option value="Soy Nuevo en la INV">SOY NUEVO EN LA INV</option>
-                </select>
-
-                <br>
-                <button type="submit" name="btnEnviar" id="btnEnviar" class="btnEnviar" onclick="return Contactos()">Enviar</button>
-            
-            </form>
-        </main>
-        <!-- linea de codigo para conectar con el archivo javascript -->
-            <script type="text/javascript" src="Contactos.js"></script>
-        
-        <footer class="footer">
-            <p> (c) 2023 Iglesia Nueva Vida Internacional </p>
-        </footer>
+    <div class="nav-bg">
+        <nav class="navegacion-principal">
+            <a href="index.html">Inicio</a>
+            <a href="pastores.html">Pastores</a>
+            <a href="ministerios.html">Ministerios</a>
+            <a href="donaciones.html">Donaciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </div>
+
+    <main class="contenedor1 sombra1">
+        <!--action="./recibeFormulario.php"-->
+        <form method="post" class="form">
+
+            <label form="codigo" class="lbl_titulo">Informacion Requerida</label>
+            <br>
+
+            <div class="inputbox">
+                <span>Nombre</span>
+                <input type="text" id="nombre" name="nombre" class="nombre" required="required">
+                <i></i>
+            </div>
+
+            <div class="inputbox">
+                <span>Correo</span>
+                <input type="email" id="email" name="email" class="email" required="required">
+                <i></i>
+            </div>
+
+            <label for="telefono" label="lbl_inputs">Contacto</label>
+            <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Telefono de contacto">
+            <br>
+
+            <label for="mensaje" label="lbl_inputs">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10"
+                placeholder="Escribe tu mensaje"></textarea>
+            <br>
+            <br>
+
+            <label for="eresHijo">Eres Hijo de Iglesia Nueva Vida?</label>
+            <select name="opciones" id="opciones" title="opciones" required>
+                <option value="0">---selecciona una opcion---</option>
+                <option value="Si">SI</option>
+                <option value="No">NO</option>
+                <option value="Soy Nuevo en la INV">SOY NUEVO EN LA INV</option>
+            </select>
+
+            <br>
+            <button type="submit" name="btnEnviar" id="btnEnviar" class="btnEnviar" onclick="return Contactos()">Enviar</button>
+        
+        </form>
+    </main>
+    <!-- linea de codigo para conectar con el archivo javascript -->
+        <script type="text/javascript" src="Contactos.js"></script>
+    
+    <footer class="footer">
+        <p> (c) 2023 Iglesia Nueva Vida Internacional </p>
+    </footer>
+    
 </body>
 
 </html>
